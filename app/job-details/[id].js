@@ -6,6 +6,8 @@ import { Company, JobAbout, JobFooter, JobTabs, ScreenHeaderBtn, Specifics } fro
 import { COLORS, icons, SIZES } from "../../constants";
 import useFetch from "../../hook/useFetch";
 
+const tabs = ["About", "Qualifications", "Responsibilities"];
+
 const JobDetails = () => {
     const params = useSearchParams();
     const router = useRouter();
@@ -15,7 +17,9 @@ const JobDetails = () => {
     })
 
     const [refreshing, setRefreshing] = useState(false);
-    const onRefresh = () => {s}
+    const onRefresh = () => {}
+
+    const [activeTab, setActiveTab] = useState(tabs[0])
 
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
@@ -61,7 +65,11 @@ const JobDetails = () => {
                                 state={data[0].job_state}
                                 country={data[0].job_country}
                             />
-                            <JobTabs />
+                            <JobTabs 
+                                tabs={tabs}
+                                activeTab={activeTab}
+                                setActiveTab={setActiveTab}
+                            />
                         </View>
                     )}
                 </ScrollView>
