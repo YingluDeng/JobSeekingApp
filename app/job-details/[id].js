@@ -56,8 +56,10 @@ const JobDetails = () => {
                             <Company 
                                 companyLogo={data[0].employer_logo}
                                 jobTitle={data[0].job_title}
-                                companyName={data[0].company_name}
-                                location={data[0].job_country}
+                                companyName={data[0].employer_name}
+                                city={data[0].job_city}
+                                state={data[0].job_state}
+                                country={data[0].job_country}
                             />
                             <JobTabs />
                         </View>

@@ -23,7 +23,7 @@ const NeaybyJobCard = ({ job, handleNavigate }) => {
         <Text style={styles.jobName} numberOfLines={1}>
           {job.job_title}
         </Text>
-        <Text style={styles.location}>{job.job_city} {job.job_state}</Text>
+        <Text style={styles.location}>{job.job_city} {job.job_state} {job.job_country}</Text>
       </View>
     </TouchableOpacity>
   )
