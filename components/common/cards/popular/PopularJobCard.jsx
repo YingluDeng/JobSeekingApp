@@ -2,6 +2,8 @@ import React from 'react'
 import { View, Text, TouchableOpacity, Image } from 'react-native'
 
 import styles from './popularjobcard.style'
+import { checkImageURL } from '../../../../utils'
+// import job_placeholder from "../../../../assets/icons/job_placeholder.png"
 
 const PopularJobCard = ({ item, selectedJob, handleCardPress }) => {
   return (
@@ -11,7 +13,8 @@ const PopularJobCard = ({ item, selectedJob, handleCardPress }) => {
     >
       <TouchableOpacity style={styles.logoContainer(selectedJob, item)}>
         <Image 
-          source={{ uri: item.employer_logo }}
+          // source={{ url: item.employer_logo }}
+          source={{ uri: checkImageURL(item.employer_logo) ? item.employer_logo : "https://img.icons8.com/nolan/64/work.png" }}
           resizeMode="contain"
           style={styles.logoImage}
         />
