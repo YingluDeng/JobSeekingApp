@@ -5,6 +5,7 @@ import { useCallback, useState } from "react";
 import { Company, JobAbout, JobFooter, JobTabs, ScreenHeaderBtn, Specifics } from "../../components";
 import { COLORS, icons, SIZES } from "../../constants";
 import useFetch from "../../hook/useFetch";
+import { FontDisplay } from "expo-font";
 
 const tabs = ["About", "Qualifications", "Responsibilities"];
 
@@ -19,7 +20,21 @@ const JobDetails = () => {
     const [refreshing, setRefreshing] = useState(false);
     const onRefresh = () => {}
 
-    const [activeTab, setActiveTab] = useState(tabs[0])
+    const [activeTab, setActiveTab] = useState(tabs[0]);
+
+    const displayTabContent = () => {
+        switch (activeTab) {
+            case "Qualifications":
+                return <Specifics 
+                    title="Qualifications"
+                    points={data[0].job_highlights?.qualifications ?? ['']}
+                />
+            case "About":
+            case "Responsibilities":
+            default:
+                break;
+        }
+    }
 
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
@@ -70,6 +85,8 @@ const JobDetails = () => {
                                 activeTab={activeTab}
                                 setActiveTab={setActiveTab}
                             />
+
+                            {displayTabContent()}
                         </View>
                     )}
                 </ScrollView>
