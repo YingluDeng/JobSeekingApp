@@ -27,7 +27,7 @@ const JobDetails = () => {
             case "Qualifications":
                 return <Specifics 
                     title="Qualifications"
-                    points={data[0].job_highlights?.qualifications ?? ['']}
+                    points={data[0].job_highlights?.Qualifications ?? ['']}
                 />
             case "About":
             case "Responsibilities":
