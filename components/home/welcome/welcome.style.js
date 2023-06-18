@@ -67,9 +67,9 @@ const styles = StyleSheet.create({
     shadowColor: COLORS.lightW,
   },
   searchBtnImage: {
-    width: "50%",
-    height: "50%",
-    tintColor: COLORS.white,
+    width: "80%",
+    height: "80%",
+    // tintColor: COLORS.white,
   },
   tabsContainer: {
     width: "100%",

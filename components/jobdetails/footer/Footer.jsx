@@ -12,6 +12,7 @@ const Footer = ({ url }) => {
           source={icons.heartOutline}
           resizeMode='contain'
           style={styles.likeBtnImage}
+          onPress={() => {icons.heartOutline}}
         />
       </TouchableOpacity>
 

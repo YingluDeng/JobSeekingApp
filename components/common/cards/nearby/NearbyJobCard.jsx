@@ -21,7 +21,6 @@ const NeaybyJobCard = ({ job, handleNavigate }) => {
 
       <View style={styles.textContainer}> 
         <Text style={styles.jobName} numberOfLines={1}>{job.job_title}</Text>
-        {/* <Text style={styles.lineColor}>_______________________________</Text> */}
         <Text style={styles.companyName} numberOfLines={1}>{job.employer_name}</Text>
         <View style={styles.locationBox}>  
           <Image 
@@ -32,8 +31,6 @@ const NeaybyJobCard = ({ job, handleNavigate }) => {
         </View>
       </View>
     </TouchableOpacity>
-
-
   )
 }
 

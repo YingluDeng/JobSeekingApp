@@ -14,8 +14,8 @@ const styles = StyleSheet.create({
     shadowColor: COLORS.lightW,
   },
   btnImg: (dimension) => ({
-    width: dimension,
-    height: dimension,
+    width: 40,
+    height: 40,
     borderRadius: SIZES.small / 1.25,
   }),
 });
