@@ -13,7 +13,7 @@ const Popularjobs = () => {
   // const isLoading = false;
   // const error = false;
   const { data, isLoading, error } = useFetch ('search', {
-    query: "React Developer",
+    query: "Software Engineer",
     num_pages: 1
   })
 
@@ -21,12 +21,7 @@ const Popularjobs = () => {
 
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.headerTitle}>Popular jobs</Text>
-        <TouchableOpacity>
-          <Text style={styles.headerBtn}>Show all</Text>
-        </TouchableOpacity>
-      </View>
+      
 
       {/* show jobs  */}
       <View style={styles.cardsContainer}>
