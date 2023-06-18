@@ -16,7 +16,7 @@ https://expo.dev/@cecilia1123/jobSeekingApp
 ## Application Features
 
 ### Homepage
-<img src="./gif/1.gif" alt="homepage recording" height="500">
+<img src="./gif/1.gif" alt="homepage recording" height="600">
   
 [(Back to top)](#table-of-contents)
 
