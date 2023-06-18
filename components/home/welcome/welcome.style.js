@@ -21,12 +21,16 @@ const styles = StyleSheet.create({
     fontFamily: FONT.regular,
     fontSize: SIZES.large,
     color: COLORS.secondary,
+    ...SHADOWS.xSmall,
+    shadowColor: COLORS.orange,
   },
   welcomeMessage: {
     fontFamily: FONT.bold,
     fontSize: SIZES.xLarge,
     color: COLORS.primary,
     marginTop: 2,
+    ...SHADOWS.xSmall,
+    shadowColor: COLORS.orange,
   },
   searchContainer: {
     justifyContent: "center",
@@ -77,12 +81,12 @@ const styles = StyleSheet.create({
     paddingVertical: SIZES.small / 2,
     paddingHorizontal: SIZES.small,
     borderRadius: SIZES.small,
-    borderWidth: 1,
-    borderColor: activeJobType === item ? COLORS.secondary : COLORS.lightGreen,
+    // borderWidth: 1,
+    backgroundColor: activeJobType === item ? COLORS.secondary : COLORS.white,
   }),
   tabText: (activeJobType, item) => ({
     fontFamily: FONT.medium,
-    color: activeJobType === item ? COLORS.secondary : COLORS.lightGreen,
+    color: activeJobType === item ? COLORS.white : COLORS.gray,
   }),
 });
 

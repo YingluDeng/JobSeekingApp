@@ -7,6 +7,8 @@ const styles = StyleSheet.create({
     marginVertical: SIZES.medium,
     justifyContent: "center",
     alignItems: "center",
+    // ...SHADOWS.small,
+    // shadowColor: COLORS.lightW,
   },
   logoBox: {
     width: 80,

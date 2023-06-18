@@ -10,7 +10,9 @@ const COLORS = {
   lightGreen: "#a9b2b0",
 
   white: "#F3F4F8",
-  // lightWhite: "#Eccb94",
+  
+  orange: "#ee630e",
+
   lightWhite: "#e9e1d3",
   lighterW: "#f2ede5",
 };
