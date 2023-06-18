@@ -12,7 +12,13 @@ The Job Seeking Mobile App is a React Native project developed with JavaScript. 
 https://expo.dev/@cecilia1123/jobSeekingApp
 
 
+<!-- Application Features -->
+## Application Features
 
+### Homepage
+<img src="./gif/1.gif" alt="homepage recording" height="500">
+  
+[(Back to top)](#table-of-contents)
 
 
 # Expo Router Example
