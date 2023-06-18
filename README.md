@@ -1,3 +1,20 @@
+<div align="left">
+
+  <h1>Job Seeking Mobile App</h1>
+
+  <p>
+The Job Seeking Mobile App is a React Native project developed with JavaScript. It seamlessly collects job listings from popular platforms like LinkedIn, Glassdoor, and official company websites. By integrating a custom API, it retrieves data from external sources, ensuring a robust and efficient user experience. The app is thoroughly tested on Expo and Git is utilized for version control.
+  </p>
+
+<br />
+
+<h2>Demo showcase via Expo Go</h2>
+https://expo.dev/@cecilia1123/jobSeekingApp
+
+
+
+
+
 # Expo Router Example
 
 Use [`expo-router`](https://expo.github.io/router) to build native navigation using files in the `app/` directory.
