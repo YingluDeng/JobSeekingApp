@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-import { COLORS, FONT, SIZES } from "../../../constants";
+import { COLORS, FONT, SIZES, SHADOWS } from "../../../constants";
 
 const styles = StyleSheet.create({
   container: {
@@ -17,28 +17,32 @@ const styles = StyleSheet.create({
   likeBtn: {
     width: 55,
     height: 55,
-    borderWidth: 1,
-    borderColor: "#F37453",
+    borderWidth: 2,
+    borderColor: "#E22d2d",
     borderRadius: SIZES.medium,
     justifyContent: "center",
     alignItems: "center",
+    ...SHADOWS.small,
+    shadowColor: COLORS.lightW,
   },
   likeBtnImage: {
-    width: "40%",
-    height: "40%",
-    tintColor: "#F37453",
+    width: "50%",
+    height: "50%",
+    tintColor: "#E22d2d",
   },
   applyBtn: {
     flex: 1,
-    backgroundColor: "#FE7654",
+    backgroundColor: COLORS.darkRed,
     height: "100%",
     justifyContent: "center",
     alignItems: "center",
     marginLeft: SIZES.medium,
     borderRadius: SIZES.medium,
+    ...SHADOWS.small,
+    shadowColor: COLORS.lightW,
   },
   applyBtnText: {
-    fontSize: SIZES.medium,
+    fontSize: SIZES.large,
     color: COLORS.white,
     fontFamily: FONT.bold,
   },

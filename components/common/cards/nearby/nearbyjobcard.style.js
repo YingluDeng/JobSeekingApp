@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-import { COLORS, SHADOWS, SIZES } from "../../../../constants";
+import { COLORS, SHADOWS, SIZES, FONT } from "../../../../constants";
 
 const styles = StyleSheet.create({
   container: {
@@ -11,20 +11,22 @@ const styles = StyleSheet.create({
     padding: SIZES.medium,
     borderRadius: SIZES.small,
     backgroundColor: "#FFF",
-    ...SHADOWS.medium,
-    shadowColor: COLORS.white,
+    ...SHADOWS.small,
+    shadowColor: COLORS.lightW,
   },
   logoContainer: {
     width: 50,
     height: 50,
-    backgroundColor: COLORS.white,
-    borderRadius: SIZES.medium,
+    backgroundColor: COLORS.lightWhite,
+    borderRadius: SIZES.small,
     justifyContent: "center",
     alignItems: "center",
+    ...SHADOWS.small,
+    shadowColor: COLORS.lightW,
   },
   logoImage: {
-    width: "70%",
-    height: "70%",
+    width: "80%",
+    height: "80%",
   },
   textContainer: {
     flex: 1,
@@ -41,6 +43,30 @@ const styles = StyleSheet.create({
     color: COLORS.gray,
     marginTop: 3,
     textTransform: "capitalize",
+  },
+  companyName: {
+    fontSize: SIZES.small,
+    color: COLORS.primary,
+    fontFamily: FONT.medium,
+    marginTop: 3,
+  },
+ 
+  locationBox: {
+    flexDirection: "row",
+    justifyContent: "left",
+    alignItems: "left",
+    marginTop: 3,
+  },
+  locationImage: {
+    width: 14,
+    height: 14,
+    tintColor: COLORS.gray,
+  },
+  locationName: {
+    fontSize: SIZES.small,
+    fontFamily: FONT.regular,
+    marginLeft: 2,
+    color: COLORS.lightGreen,
   },
 });
 

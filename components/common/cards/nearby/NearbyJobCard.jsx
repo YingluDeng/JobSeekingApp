@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, Image } from 'react-native'
 
 import styles from './nearbyjobcard.style'
 import { checkImageURL } from '../../../../utils'
-// import job_placeholder from "../../../../assets/icons/job_placeholder.png"
+import { icons } from '../../../../constants'
 
 const NeaybyJobCard = ({ job, handleNavigate }) => {
   return (
@@ -20,12 +20,20 @@ const NeaybyJobCard = ({ job, handleNavigate }) => {
       {/* <Text style={styles.companyName} numberOfLines={1}>{item.employer_name}</Text> */}
 
       <View style={styles.textContainer}> 
-        <Text style={styles.jobName} numberOfLines={1}>
-          {job.job_title}
-        </Text>
-        <Text style={styles.location}>{job.job_city} {job.job_state} {job.job_country}</Text>
+        <Text style={styles.jobName} numberOfLines={1}>{job.job_title}</Text>
+        {/* <Text style={styles.lineColor}>_______________________________</Text> */}
+        <Text style={styles.companyName} numberOfLines={1}>{job.employer_name}</Text>
+        <View style={styles.locationBox}>  
+          <Image 
+            source={icons.location}
+            resizeMode="contain"
+            style={styles.locationImage} />
+          <Text style={styles.locationName} >{job.job_city} {job.job_state} {job.job_country}</Text>
+        </View>
       </View>
     </TouchableOpacity>
+
+
   )
 }
 

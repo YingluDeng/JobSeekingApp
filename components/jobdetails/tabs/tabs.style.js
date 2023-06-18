@@ -9,12 +9,10 @@ const styles = StyleSheet.create({
   },
   btn: (name, activeTab) => ({
     paddingVertical: SIZES.medium,
-    paddingHorizontal: SIZES.xLarge,
+    paddingHorizontal: SIZES.large,
     backgroundColor: name === activeTab ? COLORS.primary : "#F3F4F8",
     borderRadius: SIZES.medium,
-    marginLeft: 2,
-    ...SHADOWS.medium,
-    shadowColor: COLORS.white,
+    marginLeft: 4,
   }),
   btnText: (name, activeTab) => ({
     fontFamily: "DMMedium",
