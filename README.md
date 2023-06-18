@@ -23,6 +23,9 @@ Use [`expo-router`](https://expo.github.io/router) to build native navigation us
 
 ```sh
 npx create-expo-app -e with-router
+npm install expo-font axios react-native-dotenv
+npm install -g expo-cli
+expo-cli start --tunnel
 ```
 
 ## 📝 Notes
