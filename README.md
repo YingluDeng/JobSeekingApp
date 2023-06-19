@@ -2,15 +2,23 @@
 
   <h1>Job Seeking Mobile App</h1>
 
+<div align="center">
+<img width="250" height="550" src='https://github.com/YingluDeng/JobSeekingApp/blob/main/gif/1.png' alt='image'/>
+<img width="250" height="550" src='https://github.com/YingluDeng/JobSeekingApp/blob/main/gif/2.png' alt='image'/>
+</div>
+
   <p>
 The Job Seeking Mobile App is a React Native project developed with JavaScript. It seamlessly collects job listings from popular platforms like LinkedIn, Glassdoor, and official company websites. By integrating a custom API, it retrieves data from external sources, ensuring a robust and efficient user experience. The app is thoroughly tested on Expo and Git is utilized for version control.
   </p>
+
+<a href="https://drive.google.com/file/d/1fB4Vkwj0bNLWoGTleVA6737TJPUTwgAG/view?usp=sharing" target="_blank">DEMO VIDEO 🔗</a>
 
 <br />
 
 <h2>Demo showcase via Expo Go</h2>
 https://expo.dev/@cecilia1123/jobSeekingApp
 
+<br />
 
 <!-- Table of contents -->
 ## Table of Contents
@@ -25,32 +33,21 @@ https://expo.dev/@cecilia1123/jobSeekingApp
     - [Turn Page](#turn-page)
     - [Filter Job](#filter-job)
 - [Getting Started](#getting-started)
-- [Useful Resource](#useful-resource)
 - [Developer](#developer)
-<br />
 
+<br />
 
 <!-- Tech Stack -->
 ## Tech Stack
 ### Languages:
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
 ### Frameworks, Platforms and Libraries:
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
-
-### Cloud Hosting/SaaS:
-![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
-![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
-![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
-
-### Databases:
-![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)
+![Expo](https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37)
 
 [(Back to top)](#table-of-contents)
 
@@ -65,7 +62,7 @@ https://expo.dev/@cecilia1123/jobSeekingApp
   
 [(Back to top)](#table-of-contents)
   
-### Search Job 
+### Search Bar 
 <img src="./gif/searchJob.gif" alt="login recording" height="600">
   
 [(Back to top)](#table-of-contents)
@@ -92,12 +89,14 @@ https://expo.dev/@cecilia1123/jobSeekingApp
 
 <br />
 
+<!-- Getting Started -->
+## Getting Started
 
-# Expo Router Example
+### Expo Router Example
 
 Use [`expo-router`](https://expo.github.io/router) to build native navigation using files in the `app/` directory.
 
-## 🚀 How to use
+### 🚀 How to use
 
 ```sh
 npx create-expo-app -e with-router
@@ -106,7 +105,18 @@ npm install -g expo-cli
 expo-cli start --tunnel
 ```
 
-## 📝 Notes
+### 📝 Notes
 
 - [Expo Router: Docs](https://expo.github.io/router)
 - [Expo Router: Repo](https://github.com/expo/router)
+
+
+<!-- developer -->
+## Developer
+**Cecilia Deng** - https://www.linkedin.com/in/yinglu-cecilia-deng/<br/>
+**Demo link** - https://drive.google.com/file/d/1fB4Vkwj0bNLWoGTleVA6737TJPUTwgAG/view?usp=sharing
+**Expo Go Showcase** - https://expo.dev/@cecilia1123/jobSeekingApp
+
+<br />
+  
+[(Back to top)](#table-of-contents)
